@@ -37,7 +37,7 @@ export const generateImage = async (req, res) => {
 
         await userModel.findByIdAndUpdate(user._id, { creditBalance: user.creditBalance - 1 })
 
-        res.json({ success: true, message: "Image Generated", creditBalance: user.creditBalance - 1, resultImage })
+        res.json({ success: true, message: "Image Generated", creditBalance: user.creditBalance - 1, resultImage})
 
 
     } catch (error) {
